@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Star Wars Quiz</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container">
+<div class="row">
+<div class="col-xl-8">
+
+		<h1>Star Wars Quiz (Bootstrap Forms)</h1>
+		<p>Star Wars is an American epic space opera franchise centered on a film series created by George Lucas. It depicts the adventures of various characters "a long time ago in a galaxy far, far away", following the main story of Anakin and Luke Skywalker. <small>From <a href="https://en.wikipedia.org/wiki/Star_Wars">Wikipedia</a>.</small></p>
+		<p>Star Wars has become a pop culture phenomenon, but how much do you know about the series? Take this quiz to find out!</p>
+		<p><em>...may the Force be with you...</em></p>
+		
+		<label>Question 1: Which of these is Luke Skywalker's ally and friend (played by Harrison Ford)in Episodes IV, V, and VI?</label>
+			<p><input type="radio" name="character" value="IndianaJones" id="name1"> Indiana Jones
+			<br><input type="radio" name="character" value="ThePresidentfromAirForceOne" id="name2"> The President from <i>Air Force One</i>
+			<br><input type="radio" name="character" value="HanSolo" id="name3"> Han Solo
+			<br><input type="radio" name="character" value="RickDeckard" id="name4"> Rick Deckard
+			</p>
+		<label>Question 2: Which of these characters have appeared in every Star Wars film up to now? <i>(select all that apply)</i></label>
+			<p><input type="checkbox" name="name" value="C3PO" id="character1"> C3PO
+			<br><input type="checkbox" name="name" value="Vader" id="character2"> Darth Vader/Anakin Skywalker
+			<br><input type="checkbox" name="name" value="Luke" id="character3"> Luke Skywalker
+			<br><input type="checkbox" name="name" value="R2D2" id="character4"> R2-D2
+			<br><input type="checkbox" name="name" value="LandoCalrissian" id="character5"> Lando Calrissian
+			<br><input type="checkbox" name="name" value="ObiWan" id="character6"> Obi-Wan Kenobi
+			</p>
+		<p><b>Question 3: What is the name of the bounty hunter who takes Han Solo when he is frozen in carbonite? </b></p>
+		<label>Name: <input type="text" name="charactername" id="form-name" maxlength="50"></label>
+		</p>
+		<p><b>Question 4: What are the titles of the six Star Wars films (the new one isn't out yet, so it doesn't count!)? </b></p>
+		<textarea name="film_name" rows="6" placeholder="Full titles, each on a separate line" id="films"></textarea>
+		<p><b>Question 5: What is the name of the creatures who help the rebels on Endor in Episode VI?</b></p>
+		<select name="CreatureName">
+			<option>Gungans</option>
+			<option>Humans</option>
+			<option>Tusken Raiders</option>
+			<option>Taun-Tauns</option>
+			<option>Ewoks</option>
+			<option>Geonosians</option>
+			<option>Bears</option>
+			<option>Stormtroopers</option>
+		</select>
+		</p>
+		<p><b>Question 6: What is the name of Princess Leia's planet that the Death Star destroys? </b></p>
+		<label>Name: <input type="text" name="planetname" id="planet" maxlength="50"></label>
+		</p>
+		<p><input type="submit"> <input type="reset" value="Start over"></p>
+</div>
+</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
